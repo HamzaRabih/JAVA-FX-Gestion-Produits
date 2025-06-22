@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.tpjfx.ProductController">
+    <Label text="Gestion des Produits"/>
+    <TextField fx:id="nameField" promptText="Nom du produit"/>
+    <TextField fx:id="priceField" promptText="Prix du produit"/>
+    <Button fx:id="addButton" text="Ajouter" onAction="#addProduct"/>
+    <ListView fx:id="productList" prefHeight="200"/>
+</VBox>
